@@ -1,0 +1,10 @@
+Output file of Main.java 
+This file contains the results from the Multe-Agent-Pathfinding Simulation
+by Jonas Passweg
+
+Length of Grid: 10
+Height of Grid: 10
+Obstacles:
+
+Move 0  
+Move 1  

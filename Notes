@@ -1,0 +1,82 @@
+I ENTERED THE MATRIX
+Patch 1.1:
+	I'm starting to comment what is left to do on the program here in patch notes
+	New:
+	-	class notes with patch updates
+	Need to be modified:
+	-	user experience:
+		simulator with pictures instead of numbers
+		Menu for 
+	Bugs:
+	-	When a agent is on the goal location of another agent, the second agent can't
+		find its goal and the program will crash	
+	-	Agents can't cross
+
+Patch 1.2:
+	New:
+	-	class UserVariables which stores informations about the coordinations of the
+		agents and the obstacles.
+	-	simplifying of the main class
+	-	Simulation finally got pictures
+	Bugs:
+	-	Some Agents just looks for every other placement until it looks at the goal 
+		location.
+	Need to be modified:
+	-	Editor to simpler place obstacles and agents
+	-	or a sort of menu
+	-	commenting
+Patch 1.3: (13.06.2014)
+	New:
+	-	Adding date to patch
+	Bugs:
+	-	Some bug in goal-searching leading to only one agent to be at his goal
+	-	Graphic bugs when height or length < 3
+Patch 1.4: (16.06.2014)
+	New:
+	-	Graphic problem with h and l < 3 are solved
+		(deepkonstant was set to 30 instead of 40, which is the same amount as the pictures width and
+		100 pixels were added to width and height for edges and space between the pictures)
+	-	The problem with crossing doesn't seem do be happening anymore but may be considered in new
+		algorithm steps
+	Need to be modified:
+	-	still commenting of Agent.java and AlgrorithmAgent.java
+Patch 1.5: (17.06.2014)
+	New:
+	-	I solved the problem with only one agent arriving at its goal before the program finished.
+		Then I found out that if one agent was at his goal both would still search for a new field 
+		to target which I also solved.
+	-	I think the problem with agent on goals of other agents is solved due to the checkGoal() method
+		in AlgorithmAgent.java
+	-	fields in algorithm simulation which are on the simulation are now marked
+	-	output file in local folder
+	-	displaying of output file
+	-	disposing of algorithm simulation at the end
+	-	minor changes
+	-	code consists now of 1166 lines
+	Need to be modified:
+	-	closeList fields need to be marked on the algorithm
+	-	commenting
+	-	editor or menu
+Patch 1.6: (18.06.2014)
+	New:
+	-	more commenting
+	-	minor bug changes
+	-	BIG BUG with no possible crossing over is solved but made a mixing up of the code
+	Bugs:
+	-	The algorithm calculates g like h instead of really looking at how much fields were passed
+		until getting to that place.
+	-	If there is temporarly no possible path the program shuts down (solved but further tests must be done)
+Patch 1.7: (21.06.2014)
+	New:
+	-	Class-diagram
+	-	InputFileReader
+	-	Editor under maintainance
+Patch 1.8: (22.06.2014)
+	New:
+	-	Editor uncommented
+	EVERYTHING NEEDS TO BE COMMENTED PROPERLY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
+Patch 1.9: (23.06.2014)
+	New:
+	-	more commenting
+	-	minor fixing
+	-	code consists now of 1945 lines
